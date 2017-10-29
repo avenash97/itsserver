@@ -1,0 +1,15 @@
+dj-database-url
+Django
+django-filter
+django-rest
+djangorestframework
+djangorestframework-gis
+gunicorn
+psycopg2
+coreapi
+geos
+Markdown
+olefile
+Pillow
+pytz
+whitenoise
