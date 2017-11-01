@@ -85,42 +85,42 @@ class Member(models.Model):
         
 class farm_photo(models.Model):
     FID = models.ForeignKey(Farm,to_field='FID',on_delete=models.CASCADE)
-    pic_name = models.ImageField(upload_to = 'Farm_Photos')
+    pic_name = models.FileField(upload_to = 'Farm_Photos')
     DateTime= models.DateTimeField(auto_now=True)
     def __str__(self):
         return "%s : %s" %(self.FID,self.DateTime)
 
 class well_photo(models.Model):
     WID = models.ForeignKey(Well,to_field='WID',on_delete=models.CASCADE)
-    pic_name = models.ImageField(upload_to = 'Well_Photos')
+    pic_name = models.FileField(upload_to = 'Well_Photos')
     DateTime= models.DateTimeField(auto_now=True)
     def __str__(self):
         return "%s : %s" %(self.WID,self.DateTime)
 
 class storage_photo(models.Model):
     SID = models.ForeignKey(Storage,to_field='SID',on_delete=models.CASCADE)
-    pic_name = models.ImageField(upload_to = 'Storage_Photos')
+    pic_name = models.FileField(upload_to = 'Storage_Photos')
     DateTime= models.DateTimeField(auto_now=True)
     def __str__(self):
         return "%s : %s" %(self.SID,self.DateTime)
         
 class household_photo(models.Model):
     HID = models.ForeignKey(Household,to_field='HID',on_delete=models.CASCADE)
-    pic_name = models.ImageField(upload_to = 'Household_Photos')
+    pic_name = models.FileField(upload_to = 'Household_Photos')
     DateTime= models.DateTimeField(auto_now=True)
     def __str__(self):
         return "%s : %s" %(self.HID,self.DateTime)
 
 class household_video(models.Model):
     HID = models.ForeignKey(Household,to_field='HID',on_delete=models.CASCADE)
-    pic_name = models.ImageField(upload_to = 'Household_Photos')
+    pic_name = models.FileField(upload_to = 'Household_Photos')
     DateTime= models.DateTimeField(auto_now=True)
     def __str__(self):
         return "%s : %s" %(self.HID,self.DateTime)
         
 class household_audio(models.Model):
     HID = models.ForeignKey(Household,to_field='HID',on_delete=models.CASCADE)
-    pic_name = models.ImageField(upload_to = 'Household_Photos')
+    pic_name = models.FileField(upload_to = 'Household_Photos')
     DateTime= models.DateTimeField(auto_now=True)
     def __str__(self):
         return "%s : %s" %(self.HID,self.DateTime)
