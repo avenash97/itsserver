@@ -15,8 +15,8 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib.gis import admin
 from rest_framework import routers, serializers, viewsets
-from django.conf.urls.static import static
 from rest_framework.urlpatterns import format_suffix_patterns
+from django.conf.urls.static import static
 from django.conf import settings
 from restapi import views
 import django.views
